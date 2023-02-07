@@ -1,6 +1,6 @@
-const { bookParse } = require('./parser');
+const { bookParse } = require('../src/parser');
 
-export const handler = async(event: any) => {
+exports.handler = async(event: any) => {
     let url = "http://www.gutenberg.org/files/2701/2701-0.txt";
 
     if (event['url']) {

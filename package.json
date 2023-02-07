@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "jest --test-timeout 5000",
-    "build": "tsc src/*.ts --downLevelIteration"
+    "build": "tsc src/*.ts --downLevelIteration --outDir ~/dist"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
