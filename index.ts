@@ -7,6 +7,8 @@ exports.handler = async(event: any) => {
         url = event['url'];
     }  
     
+    console.log(event);
+
     let response: string = '';
     let topFifty = await bookParse(url);
     

@@ -45,6 +45,7 @@ exports.handler = function (event) { return __awaiter(_this, void 0, void 0, fun
                 if (event['url']) {
                     url = event['url'];
                 }
+                console.log(event);
                 response = '';
                 return [4 /*yield*/, bookParse(url)];
             case 1:
