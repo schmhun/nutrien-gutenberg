@@ -25,10 +25,17 @@ it('will not parse a given word that is common', () => {
 it('will count the occurrence of a word in an array', () => {
     let wordArr = ['hey', 'hey', 'you', 'you', 'i', 'don\'t', 'like', 'your', 'girlfriend'];
     let counted = parser.wordCounter(wordArr);
-    // let newMap = new Map();
-    // newMap.set(['hey', 2], ['you', 2], ['i', 1], ['don\'t', 1], ['like', 1], ['your', 1], ['girlfriend', 1]);
+    let newMap = new Map();
+    newMap.set('hey', 2);
+    newMap.set('you', 2);
+    newMap.set('i', 1);
+    newMap.set('don\'t', 1);
+    newMap.set('like', 1);
+    newMap.set('your', 1)
+    newMap.set('girlfriend', 1);
    
     expect(counted).toEqual(expect.any(Map));
+    expect(counted.get("don't")).toEqual(1);
 });
 
 it('will sort the occurrences by descending order', () => {
