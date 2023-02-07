@@ -37,15 +37,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 var bookParse = require('./src/parser').bookParse;
 exports.handler = function (event) { return __awaiter(_this, void 0, void 0, function () {
-    var url, response, topFifty, i;
+    var url, rawBody, parsed, response, topFifty, i;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
                 url = "http://www.gutenberg.org/files/2701/2701-0.txt";
-                if (event['url']) {
-                    url = event['url'];
+                if (event['body']) {
+                    rawBody = event['body'];
+                    parsed = JSON.parse(rawBody);
+                    url = parsed["url"];
                 }
-                console.log(event);
                 response = '';
                 return [4 /*yield*/, bookParse(url)];
             case 1:
