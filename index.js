@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-var bookParse = require('../src/parser').bookParse;
+var bookParse = require('./src/parser').bookParse;
 exports.handler = function (event) { return __awaiter(_this, void 0, void 0, function () {
     var url, response, topFifty, i;
     return __generator(this, function (_a) {
