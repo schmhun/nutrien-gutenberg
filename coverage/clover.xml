@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1675727326937" clover="3.2.0">
+  <project timestamp="1675727326937" name="All files">
+    <metrics statements="88" coveredstatements="76" conditionals="114" coveredconditionals="62" methods="26" coveredmethods="23" elements="228" coveredelements="161" complexity="0" loc="88" ncloc="88" packages="1" files="1" classes="1"/>
+    <file name="parser.js" path="/home/schmhun/projects/nutrien/src/parser.js">
+      <metrics statements="88" coveredstatements="76" conditionals="114" coveredconditionals="62" methods="26" coveredmethods="23"/>
+      <line num="2" count="1" type="cond" truecount="2" falsecount="1"/>
+      <line num="3" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="1" type="cond" truecount="2" falsecount="1"/>
+      <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="13" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="16" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="17" count="4" type="cond" truecount="3" falsecount="1"/>
+      <line num="18" count="4" type="cond" truecount="2" falsecount="11"/>
+      <line num="19" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="20" count="4" type="cond" truecount="4" falsecount="2"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="26" count="1" type="cond" truecount="5" falsecount="2"/>
+      <line num="27" count="0" type="cond" truecount="0" falsecount="6"/>
+      <line num="28" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="29" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="34" count="4" type="stmt"/>
+      <line num="35" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="38" count="1" type="cond" truecount="2" falsecount="1"/>
+      <line num="39" count="17298" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="17298" type="cond" truecount="1" falsecount="1"/>
+      <line num="41" count="17298" type="stmt"/>
+      <line num="42" count="17298" type="stmt"/>
+      <line num="43" count="51888" type="cond" truecount="3" falsecount="0"/>
+      <line num="45" count="0" type="stmt"/>
+      <line num="47" count="17298" type="stmt"/>
+      <line num="48" count="17298" type="cond" truecount="4" falsecount="1"/>
+      <line num="50" count="17298" type="cond" truecount="1" falsecount="1"/>
+      <line num="52" count="17298" type="stmt"/>
+      <line num="54" count="1" type="cond" truecount="2" falsecount="1"/>
+      <line num="55" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="56" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="63" count="1" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="65" count="1" type="stmt"/>
+      <line num="67" count="288934" type="cond" truecount="2" falsecount="0"/>
+      <line num="68" count="66240" type="stmt"/>
+      <line num="70" count="222694" type="stmt"/>
+      <line num="72" count="222694" type="stmt"/>
+      <line num="74" count="222694" type="cond" truecount="2" falsecount="0"/>
+      <line num="75" count="85132" type="stmt"/>
+      <line num="76" count="137562" type="stmt"/>
+      <line num="78" count="1" type="stmt"/>
+      <line num="80" count="3" type="stmt"/>
+      <line num="81" count="3" type="stmt"/>
+      <line num="82" count="3" type="stmt"/>
+      <line num="83" count="288932" type="stmt"/>
+      <line num="84" count="288932" type="cond" truecount="2" falsecount="0"/>
+      <line num="85" count="137561" type="stmt"/>
+      <line num="87" count="3" type="stmt"/>
+      <line num="89" count="1" type="stmt"/>
+      <line num="91" count="2" type="stmt"/>
+      <line num="92" count="2" type="stmt"/>
+      <line num="93" count="137558" type="cond" truecount="2" falsecount="0"/>
+      <line num="94" count="120258" type="stmt"/>
+      <line num="97" count="17300" type="stmt"/>
+      <line num="100" count="2" type="stmt"/>
+      <line num="102" count="1" type="stmt"/>
+      <line num="104" count="114615" type="stmt"/>
+      <line num="105" count="2" type="stmt"/>
+      <line num="106" count="17296" type="stmt"/>
+      <line num="107" count="17296" type="stmt"/>
+      <line num="110" count="2" type="stmt"/>
+      <line num="112" count="1" type="stmt"/>
+      <line num="114" count="1" type="stmt"/>
+      <line num="116" count="1" type="stmt"/>
+      <line num="117" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="118" count="1" type="stmt"/>
+      <line num="120" count="1" type="stmt"/>
+      <line num="121" count="1" type="stmt"/>
+      <line num="122" count="1" type="stmt"/>
+      <line num="123" count="1" type="stmt"/>
+      <line num="124" count="1" type="stmt"/>
+      <line num="129" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
