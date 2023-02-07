@@ -1,16 +1,22 @@
 const { bookParse } = require('./parser');
 
-async function main() {
-    let url = "http://www.gutenberg.org/files/2701/2701-0.txt"
+export const handler = async(event: any) => {
+    let url = "http://www.gutenberg.org/files/2701/2701-0.txt";
 
+    if (event['url']) {
+        url = event['url'];
+    }  
+    
+    let response: string = '';
     let topFifty = await bookParse(url);
-
-    console.log(`Top 50 words:`);
+    
+    response = response + `Top 50 words from ${url}:\n`;
+    
     for (let i = 0; i < 50; i++) {
-        if (topFifty[i]) {
-            console.log(`${i+1}) ${topFifty[i].word}: ${topFifty[i].count}\n`);
+        if (topFifty[i]) {            
+            response = response + `${i+1}) ${topFifty[i].word}: ${topFifty[i].count}\n`;            
         }
     }
+    
+    return response;
 }
-
-main();

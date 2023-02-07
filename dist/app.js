@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,26 +35,30 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+exports.__esModule = true;
+exports.handler = void 0;
 var bookParse = require('./parser').bookParse;
-function main() {
-    return __awaiter(this, void 0, void 0, function () {
-        var url, topFifty, i;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    url = "http://www.gutenberg.org/files/2701/2701-0.txt";
-                    return [4 /*yield*/, bookParse(url)];
-                case 1:
-                    topFifty = _a.sent();
-                    console.log("Top 50 words:");
-                    for (i = 0; i < 50; i++) {
-                        if (topFifty[i]) {
-                            console.log("".concat(i + 1, ") ").concat(topFifty[i].word, ": ").concat(topFifty[i].count));
-                        }
+var handler = function (event) { return __awaiter(void 0, void 0, void 0, function () {
+    var url, response, topFifty, i;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                url = "http://www.gutenberg.org/files/2701/2701-0.txt";
+                if (event['url']) {
+                    url = event['url'];
+                }
+                response = '';
+                return [4 /*yield*/, bookParse(url)];
+            case 1:
+                topFifty = _a.sent();
+                response = response + "Top 50 words from ".concat(url, ":\n");
+                for (i = 0; i < 50; i++) {
+                    if (topFifty[i]) {
+                        response = response + "".concat(i + 1, ") ").concat(topFifty[i].word, ": ").concat(topFifty[i].count, "\n");
                     }
-                    return [2 /*return*/];
-            }
-        });
+                }
+                return [2 /*return*/, response];
+        }
     });
-}
-main();
+}); };
+exports.handler = handler;
